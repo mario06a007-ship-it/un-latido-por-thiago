@@ -44,6 +44,12 @@ main{max-width:560px;margin:0 auto;padding:30px 18px 40px}
   text-align:center;margin:4px 0 6px}
 .ayuda{text-align:center;color:var(--suave);margin:0 0 22px;font-size:.98rem}
 
+/* Videos */
+.videos{margin-bottom:30px}
+.vids{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+.vids video{width:100%;aspect-ratio:9/16;object-fit:cover;background:var(--vino-hondo);
+  border-radius:14px;border:2px solid var(--oro);display:block}
+
 /* Opciones */
 .opcion{display:block;text-decoration:none;background:#fff;border:1.5px solid var(--linea);
   border-left:6px solid var(--vino);border-radius:14px;padding:18px 18px 16px;margin-bottom:14px;
@@ -89,6 +95,14 @@ footer strong{color:var(--vino)}
 </header>
 
 <main>
+  <section class="videos" aria-labelledby="t-videos">
+    <h2 id="t-videos" class="pregunta">Conoce a Thiago</h2>
+    <div class="vids">
+      <video src="promo-1.mp4" poster="promo-1.jpg" controls playsinline preload="none"></video>
+      <video src="promo-2.mp4" poster="promo-2.jpg" controls playsinline preload="none"></video>
+    </div>
+  </section>
+
   <h2 class="pregunta">¿Cómo te gustaría ayudar?</h2>
   <p class="ayuda">Elige la opción que prefieras. Todas llegan al mismo lugar: el corazón de Thiago.</p>
 
