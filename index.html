@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Un Latido por Thiago — ¿Cómo quieres ayudar?</title>
+<meta name="description" content="Ayuda a Thiago, de 2 años, a llegar a su cirugía de corazón. Dona, compra un boleto de la rifa o acompáñanos a la cena con causa.">
+<meta property="og:title" content="Un Latido por Thiago">
+<meta property="og:description" content="Elige cómo quieres ayudar a Thiago: GoFundMe, rifa, cena con causa o donativo directo.">
+<meta name="theme-color" content="#7A1020">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>❤️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --vino:#7A1020; --vino-hondo:#4E0913; --oro:#E0AE4A; --oro-claro:#F6DFA6;
+  --papel:#FFF8EC; --tinta:#2A1216; --suave:#6B4A4F; --linea:#EAD7B8;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--papel);color:var(--tinta);
+  font-family:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;font-size:17px;line-height:1.55}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--oro);outline-offset:3px;border-radius:6px}
+
+/* Portada */
+.portada{background:radial-gradient(120% 90% at 50% 0%,var(--vino) 0%,var(--vino-hondo) 100%);
+  color:#fff;text-align:center;padding:48px 22px 36px}
+.latido{width:100%;max-width:340px;height:64px;display:block;margin:0 auto 18px}
+.latido path{fill:none;stroke:var(--oro);stroke-width:3;stroke-linecap:round;stroke-linejoin:round;
+  stroke-dasharray:600;stroke-dashoffset:600;animation:trazo 2.4s ease-out .2s forwards}
+@keyframes trazo{to{stroke-dashoffset:0}}
+@media (prefers-reduced-motion:reduce){.latido path{animation:none;stroke-dashoffset:0}}
+h1{font-family:"Young Serif",Georgia,serif;font-weight:400;font-size:clamp(2.1rem,8vw,3.1rem);
+  line-height:1.05;margin:0 0 14px;color:var(--oro-claro)}
+.portada p{max-width:30em;margin:0 auto;color:#F3E3E5;font-size:1.02rem}
+
+main{max-width:560px;margin:0 auto;padding:30px 18px 40px}
+.pregunta{font-family:"Young Serif",Georgia,serif;font-weight:400;font-size:1.6rem;
+  text-align:center;margin:4px 0 6px}
+.ayuda{text-align:center;color:var(--suave);margin:0 0 22px;font-size:.98rem}
+
+/* Opciones */
+.opcion{display:block;text-decoration:none;background:#fff;border:1.5px solid var(--linea);
+  border-left:6px solid var(--vino);border-radius:14px;padding:18px 18px 16px;margin-bottom:14px;
+  transition:transform .15s ease,border-color .15s ease}
+.opcion:hover,.opcion:focus-visible{border-color:var(--oro);border-left-color:var(--vino);transform:translateY(-2px)}
+.opcion:active{transform:scale(.99)}
+.opcion .cab{display:flex;align-items:center;gap:12px;margin-bottom:6px}
+.opcion .ico{font-size:1.7rem;line-height:1;flex:none}
+.opcion h3{font-family:"Young Serif",Georgia,serif;font-weight:400;font-size:1.3rem;margin:0;color:var(--vino)}
+.opcion p{margin:0 0 12px;color:var(--suave);font-size:.97rem}
+.opcion .accion{display:inline-block;background:var(--vino);color:#fff;font-weight:600;
+  padding:10px 16px;border-radius:999px;font-size:.95rem}
+
+/* Donativo directo */
+.directo{margin-top:30px;background:var(--vino-hondo);color:#fff;border-radius:18px;padding:24px 20px}
+.directo h2{font-family:"Young Serif",Georgia,serif;font-weight:400;font-size:1.45rem;margin:0 0 6px;color:var(--oro-claro)}
+.directo>p{margin:0 0 18px;color:#EBD3D7;font-size:.97rem}
+.dato{background:rgba(255,255,255,.07);border:1px solid rgba(224,174,74,.35);border-radius:12px;
+  padding:12px 14px;margin-bottom:10px}
+.dato small{display:block;color:var(--oro-claro);font-size:.82rem;margin-bottom:2px}
+.fila{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.valor{font-weight:700;font-size:1.12rem;letter-spacing:.02em;word-break:break-all}
+.copiar{flex:none;background:var(--oro);color:var(--vino-hondo);border:0;border-radius:999px;
+  font:600 .88rem "Figtree",sans-serif;padding:8px 14px;cursor:pointer}
+.copiar.ok{background:#fff}
+.wa{display:flex;align-items:center;justify-content:center;gap:8px;margin-top:16px;background:#1FA855;color:#fff;
+  text-decoration:none;font-weight:700;padding:14px;border-radius:12px}
+.nota{font-size:.86rem;color:#D9BFC3;margin:12px 0 0;text-align:center}
+
+footer{text-align:center;color:var(--suave);font-size:.9rem;padding:0 18px 36px}
+footer strong{color:var(--vino)}
+</style>
+</head>
+<body>
+
+<header class="portada">
+  <svg class="latido" viewBox="0 0 340 64" aria-hidden="true">
+    <path d="M2 34 H110 L124 34 L134 12 L148 56 L160 20 L168 34 H196
+             C196 22 212 18 218 28 C224 18 240 22 240 34 C240 46 218 56 218 56 C218 56 196 46 196 34 H338"/>
+  </svg>
+  <h1>Un Latido por Thiago</h1>
+  <p>Thiago tiene 2 años y necesita una cirugía de corazón. Cada aportación, grande o pequeña, lo acerca a ella.</p>
+</header>
+
+<main>
+  <h2 class="pregunta">¿Cómo te gustaría ayudar?</h2>
+  <p class="ayuda">Elige la opción que prefieras. Todas llegan al mismo lugar: el corazón de Thiago.</p>
+
+  <a class="opcion" href="https://gofund.me/3984e6e62" target="_blank" rel="noopener">
+    <div class="cab"><span class="ico" aria-hidden="true">💛</span><h3>Donar en GoFundMe</h3></div>
+    <p>Aporta la cantidad que quieras desde cualquier país, con tarjeta y de forma segura. También puedes compartir la campaña con tus contactos.</p>
+    <span class="accion">Ir a GoFundMe</span>
+  </a>
+
+  <a class="opcion" href="https://mario06a007-ship-it.github.io/rifa-thiago/" target="_blank" rel="noopener">
+    <div class="cab"><span class="ico" aria-hidden="true">🎟️</span><h3>Participar en la rifa</h3></div>
+    <p>Compra tus boletos y participa por los premios mientras ayudas a Thiago. Elige tus números y aparta en línea.</p>
+    <span class="accion">Ver la rifa</span>
+  </a>
+
+  <a class="opcion" href="https://mario06a007-ship-it.github.io/Cena-con-causa-Un-Latido-por-Thiago/" target="_blank" rel="noopener">
+    <div class="cab"><span class="ico" aria-hidden="true">🍽️</span><h3>Asistir a la cena con causa</h3></div>
+    <p>Una noche de gala con show cultural, grandes chefs y rifas especiales. 23 de octubre en Playa del Carmen. Reserva tu lugar en línea.</p>
+    <span class="accion">Reservar mi lugar</span>
+  </a>
+
+  <section class="directo" aria-labelledby="t-directo">
+    <h2 id="t-directo">Donativo directo</h2>
+    <p>Si prefieres, puedes transferir directamente a la cuenta del papá de Thiago.</p>
+
+    <div class="dato">
+      <small>Titular</small>
+      <div class="valor">Mario Alejandro Soto López</div>
+    </div>
+    <div class="dato">
+      <small>Banco</small>
+      <div class="valor">BBVA</div>
+    </div>
+    <div class="dato">
+      <small>CLABE interbancaria</small>
+      <div class="fila">
+        <span class="valor" id="clabe">012 694 01511708950 7</span>
+        <button class="copiar" data-copiar="012694015117089507">Copiar</button>
+      </div>
+    </div>
+    <div class="dato">
+      <small>Número de cuenta (desde BBVA)</small>
+      <div class="fila">
+        <span class="valor">151 170 8950</span>
+        <button class="copiar" data-copiar="1511708950">Copiar</button>
+      </div>
+    </div>
+    <div class="dato" style="border-color:var(--oro);background:rgba(224,174,74,.16)">
+      <small>Concepto / referencia (escríbelo al transferir)</small>
+      <div class="fila">
+        <span class="valor">Donativo Thiago</span>
+        <button class="copiar" data-copiar="Donativo Thiago">Copiar</button>
+      </div>
+    </div>
+    <div class="dato">
+      <small>Teléfono / WhatsApp</small>
+      <div class="fila">
+        <span class="valor">771 100 0973</span>
+        <button class="copiar" data-copiar="7711000973">Copiar</button>
+      </div>
+    </div>
+
+    <a class="wa" href="https://wa.me/527711000973?text=Hola%2C%20acabo%20de%20hacer%20un%20donativo%20para%20Thiago%20%E2%9D%A4%EF%B8%8F" target="_blank" rel="noopener">
+      Avisar de mi donativo por WhatsApp
+    </a>
+    <p class="nota">Mándanos tu comprobante para darte las gracias personalmente.</p>
+  </section>
+</main>
+
+<footer>Gracias por ser parte de <strong>Un Latido por Thiago</strong>.</footer>
+
+<script>
+document.querySelectorAll('.copiar').forEach(function(b){
+  b.addEventListener('click',function(){
+    var t=b.getAttribute('data-copiar');
+    function listo(){b.textContent='Copiado';b.classList.add('ok');
+      setTimeout(function(){b.textContent='Copiar';b.classList.remove('ok')},1800)}
+    if(navigator.clipboard&&window.isSecureContext){navigator.clipboard.writeText(t).then(listo,fallback)}
+    else fallback();
+    function fallback(){var a=document.createElement('textarea');a.value=t;a.style.position='fixed';a.style.opacity='0';
+      document.body.appendChild(a);a.select();try{document.execCommand('copy');listo()}catch(e){}document.body.removeChild(a)}
+  });
+});
+</script>
+</body>
+</html>
