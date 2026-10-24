@@ -4,9 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Un Latido por Thiago — ¿Cómo quieres ayudar?</title>
-<meta name="description" content="Ayuda a Thiago, de 2 años, a llegar a su cirugía de corazón. Dona, compra un boleto de la rifa o acompáñanos a la cena con causa.">
+<meta name="description" content="Ayuda a Thiago, de 2 años, a llegar a su cirugía de corazón. Participa en la rifa de un Jeep Wrangler JK 2009 desde $500 o dona directamente.">
 <meta property="og:title" content="Un Latido por Thiago">
-<meta property="og:description" content="Elige cómo quieres ayudar a Thiago: GoFundMe, rifa, cena con causa o donativo directo.">
+<meta property="og:description" content="Gana un Jeep Wrangler JK 2009 y ayuda a Thiago: boletos a $500. Sorteo en vivo el 15 de noviembre de 2026.">
 <meta name="theme-color" content="#7A1020">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>❤️</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -75,6 +75,14 @@ main{max-width:560px;margin:0 auto;padding:30px 18px 40px}
 .opcion .accion{display:inline-block;background:var(--vino);color:#fff;font-weight:600;
   padding:10px 16px;border-radius:999px;font-size:.95rem}
 
+/* Rifa destacada */
+.opcion.destacada{border:2px solid var(--oro);border-left:8px solid var(--vino);padding:20px 18px 18px;
+  background:linear-gradient(180deg,#fff 0%,#FFF3D6 100%);box-shadow:0 8px 24px rgba(78,9,19,.14)}
+.opcion.destacada h3{font-size:1.5rem}
+.opcion.destacada .etiqueta{display:inline-block;background:var(--oro);color:var(--vino-hondo);font-weight:800;
+  font-size:.74rem;letter-spacing:.1em;padding:4px 10px;border-radius:999px;margin-bottom:10px}
+.opcion.destacada .accion{padding:12px 22px;font-size:1.02rem}
+
 /* Donativo directo */
 .directo{margin-top:30px;background:var(--vino-hondo);color:#fff;border-radius:18px;padding:24px 20px}
 .directo h2{font-family:"Young Serif",Georgia,serif;font-weight:400;font-size:1.45rem;margin:0 0 6px;color:var(--oro-claro)}
@@ -127,23 +135,19 @@ footer strong{color:var(--vino)}
   <h2 class="pregunta">¿Cómo te gustaría ayudar?</h2>
   <p class="ayuda">Elige la opción que prefieras. Todas llegan al mismo lugar: el corazón de Thiago.</p>
 
+  <a class="opcion destacada" href="https://mario06a007-ship-it.github.io/rifa-thiago/" target="_blank" rel="noopener">
+    <span class="etiqueta">RIFA · $500 POR BOLETO</span>
+    <div class="cab"><span class="ico" aria-hidden="true">🚙</span><h3>Gana un Jeep Wrangler JK 2009</h3></div>
+    <p>Cada boleto es una oportunidad de ganarte el Jeep y ayuda a pagar la cirugía de Thiago. Sorteo en vivo el <b>15 de noviembre de 2026</b> con las últimas 3 cifras del Tris de la Lotería Nacional. Elige tu número y apártalo en línea.</p>
+    <span class="accion">Elegir mi boleto</span>
+  </a>
+
   <a class="opcion" href="https://gofund.me/3984e6e62" target="_blank" rel="noopener">
     <div class="cab"><span class="ico" aria-hidden="true">💛</span><h3>Donar en GoFundMe</h3></div>
     <p>Aporta la cantidad que quieras desde cualquier país, con tarjeta y de forma segura. También puedes compartir la campaña con tus contactos.</p>
     <span class="accion">Ir a GoFundMe</span>
   </a>
 
-  <a class="opcion" href="https://mario06a007-ship-it.github.io/rifa-thiago/" target="_blank" rel="noopener">
-    <div class="cab"><span class="ico" aria-hidden="true">🎟️</span><h3>Participar en la rifa</h3></div>
-    <p>Compra tus boletos y participa por los premios mientras ayudas a Thiago. Elige tus números y aparta en línea.</p>
-    <span class="accion">Ver la rifa</span>
-  </a>
-
-  <a class="opcion" href="https://mario06a007-ship-it.github.io/Cena-con-causa-Un-Latido-por-Thiago/" target="_blank" rel="noopener">
-    <div class="cab"><span class="ico" aria-hidden="true">🍽️</span><h3>Asistir a la cena con causa</h3></div>
-    <p>Una noche de gala con show cultural, grandes chefs y rifas especiales. 23 de octubre en Playa del Carmen. Reserva tu lugar en línea.</p>
-    <span class="accion">Reservar mi lugar</span>
-  </a>
 
   <section class="directo" aria-labelledby="t-directo">
     <h2 id="t-directo">Donativo directo</h2>
